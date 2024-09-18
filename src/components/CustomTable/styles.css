@@ -1,0 +1,222 @@
+:root {
+  --primary-width: 6.25vw;
+  --chip-size: 3vw;
+}
+
+.betTable {
+  width: 90%;
+  margin: auto;
+  margin-top: 1rem;
+
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+  min-height: 45vh;
+
+  aspect-ratio: 14/5;
+}
+
+.betTable-main {
+  width: 100%;
+  max-height: 100%;
+  border: none;
+  color: white;
+  font-size: 2rem;
+
+  /* aspect-ratio: 14/5; */
+
+  position: absolute;
+  inset: 0;
+
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.betTable-main tr {
+  height: 20%;
+}
+
+.betTable-main td {
+  padding: 0;
+  width: 7.143%;
+  /* height: 6.25vw; */
+  background-color: transparent;
+  /* border: 0.5px solid whitesmoke; */
+  border-right: 0.5px solid whitesmoke;
+  border-top: 0.5px solid whitesmoke;
+
+  align-content: center;
+  text-align: center;
+  font-weight: 700;
+
+  cursor: default;
+}
+
+.betTable-zeros {
+}
+.betTable-zeros > div {
+  height: 50%;
+
+  text-align: center;
+  align-content: center;
+}
+.betTable-zeros div:first-child {
+  border-bottom: 0.5px solid whitesmoke;
+}
+
+.betTable-zeros > .betTable-header:hover {
+  background: url(../../assets/images/zero_hover.png) no-repeat center;
+  background-size: 101% 101%;
+}
+.betTable-zeros > .betTable-header.hover {
+  background: url(../../assets/images/zero_hover.png) no-repeat center;
+  background-size: 101% 101%;
+}
+
+.betTable-chip {
+  font-size: 1rem;
+  background: url(../../assets/images/chip.png) no-repeat center;
+  background-position-y: 60%;
+  background-size: 3.2vw;
+  height: 3vw;
+  cursor: default;
+}
+
+.betTable-hidden tr:first-child .betTable-chip {
+  background-position: center 90%;
+  padding-top: 1.2% !important;
+}
+
+.hidden-td {
+  border: none !important;
+  visibility: hidden;
+}
+.td-red {
+  background: url(../../assets/images/red.png) no-repeat center;
+  background-size: 102% 102%;
+}
+.td-red:hover,
+.td-red.hover {
+  background: url(../../assets/images/red_hover.png) no-repeat center;
+  background-size: 101% 101%;
+}
+.td-black {
+  background: url(../../assets/images/black.png) no-repeat center;
+  background-size: 104% 102%;
+}
+.td-black:hover,
+.td-black.hover {
+  background: url(../../assets/images/black_hover.png) no-repeat center;
+  background-size: 104% 101%;
+}
+.td-row {
+  font-size: 1.3rem;
+}
+.betTable-black-diamond {
+  background: url(../../assets/images/black_diamond.png) no-repeat center;
+  background-size: 80% 80% !important;
+}
+.betTable-red-diamond {
+  background: url(../../assets/images/red_diamond.png) no-repeat center;
+  background-size: 80% 80% !important;
+}
+.betTable-black-diamond.betTable-chip {
+  background: url(../../assets/images/chip.png) no-repeat center,
+    url(../../assets/images/black_diamond.png) no-repeat center;
+  background-size: 3.2vw, 80% !important;
+  background-position-y: 60%;
+  /* background-size: 3.2vw; */
+}
+.betTable-red-diamond.betTable-chip {
+  background: url(../../assets/images/chip.png) no-repeat center,
+    url(../../assets/images/red_diamond.png) no-repeat center;
+  background-size: 3.2vw, 80% !important;
+  background-position-y: 60%;
+  /* background-size: 3.2vw; */
+}
+
+.betTable-hidden {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.betTable-hidden tr {
+  height: 3.21vw;
+}
+
+.betTable-hidden tr td {
+  /* border: 1px solid cyan; */
+  border: none;
+  width: 3.21vw;
+  padding: 0;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  align-content: center;
+  padding-bottom: 1%;
+  /* height: 4vw; */
+}
+
+@media (min-width: 1772px) {
+  .betTable-hidden tr td {
+    width: 3.18vw;
+  }
+}
+
+.betTable-hidden-first-row {
+  height: 4.8vw !important;
+}
+
+.betTable-hidden-first-row .betTable-chip {
+  /* background-position: bottom; */
+}
+
+.td-row.betTable-chip {
+  font-size: 1rem;
+}
+
+.betTable-hidden-header {
+  width: 4.8vw !important;
+}
+.betTable-hidden-first-row .betTable-hidden-header.betTable-chip {
+  background-position-x: 100% !important;
+  background-position-y: 60% !important;
+  padding-left: 1.8% !important;
+}
+.betTable-hidden-header.betTable-chip {
+  background-position-x: 100% !important;
+  padding-left: 1.8% !important;
+}
+
+.betTable-main tr:first-child td:first-child {
+  border-left: 0.5px solid whitesmoke;
+  border-bottom: 0.5px solid whitesmoke;
+}
+
+tr:first-child td:first-child {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+tr:first-child td:last-child {
+  border-top-right-radius: 0.5rem;
+}
+.betTable-main tr:nth-child(3) td:last-child {
+  border-bottom-right-radius: 0.5rem;
+  border-bottom: 0.5px solid whitesmoke;
+}
+.betTable-main tr:nth-child(4) td:nth-child(2) {
+  border-left: 0.5px solid whitesmoke;
+}
+.betTable-main tr:last-child td {
+  border-bottom: 0.5px solid whitesmoke;
+}
+
+.betTable-main tr:last-child td:nth-child(2) {
+  border-bottom-left-radius: 0.5rem;
+  border-left: 0.5px solid whitesmoke;
+}
+tr:last-child td:last-child {
+  border-bottom-right-radius: 0.5rem;
+}

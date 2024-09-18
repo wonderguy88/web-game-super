@@ -1,0 +1,54 @@
+.info-content {
+  width: 90%;
+  margin: auto;
+  padding-top: 1%;
+}
+.info-content .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.default-row {
+  height: 100%;
+}
+.default-row .bet-info {
+  height: 100%;
+}
+.default-row .latest-numbers {
+  height: 100%;
+}
+
+.bet-info {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 3%;
+  /* height: calc(0.08 * (100vh - 20px)); */
+  /* height: 100%; */
+}
+
+.bet-rate {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 3%;
+  padding-top: 1%;
+
+  /* height: calc(0.08 * (100vh - 20px)); */
+  height: 100%;
+}
+
+.bet-rate .progress-box {
+  width: 49.5%;
+  /* margin: 1%; */
+  height: 100%;
+}
+
+div[class*="col-"] {
+  padding: 0;
+}
+.latest-numbers {
+  /* height: calc(0.08 * (100vh - 20px)); */
+}
+.hot-cold-numbers {
+  margin-top: 1%;
+  /* height: calc(0.08 * (100vh - 20px)); */
+}

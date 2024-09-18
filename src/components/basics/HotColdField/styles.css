@@ -1,0 +1,46 @@
+.hotcoldfield {
+  border-radius: 0.5rem;
+  background: linear-gradient(to top, #000000, #444444);
+  color: white;
+
+  /* height: calc(0.08 * (100vh - 20px)); */
+  min-height: 65px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 3px;
+}
+
+.hotcoldfield-title {
+  text-align: center;
+  margin-right: 3%;
+}
+.hotcoldfield-content {
+  width: 80%;
+
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  margin-top: 2%;
+  margin-bottom: 10px;
+}
+.hotcoldfield-chart {
+  width: 48%;
+  border-radius: 0.3rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+.hotcoldfield-chart div {
+  width: 20%;
+  text-align: center;
+  align-content: center;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 608px) {
+  .hotcoldfield-content {
+    margin: 6% 0 5% 0;
+  }
+}

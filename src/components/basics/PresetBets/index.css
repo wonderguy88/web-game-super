@@ -1,0 +1,31 @@
+.box-content {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  top: 10%;
+  color: black;
+}
+.bet-box {
+  margin-right: 1%;
+  width: 10%;
+  aspect-ratio: 1/1;
+  text-align: center;
+  align-content: center;
+  cursor: pointer;
+  background: linear-gradient(to top, #9a9a9a, #ffffff);
+  border-radius: 0.5rem;
+}
+.bet-box:hover {
+  background: linear-gradient(to top, #555555, #bebebe);
+}
+.bet-box.selected {
+  background: linear-gradient(to top, #555555, #bebebe);
+}
+
+.preset-content {
+  color: white;
+  font-weight: bold;
+  background: linear-gradient(to top, #000000, #444444);
+  border-radius: 0.5rem;
+  padding-top: 0.5rem;
+}

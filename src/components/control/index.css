@@ -1,0 +1,37 @@
+.controls-content {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+
+  /* background: url(../../assets/images/grey_back.png) no-repeat center; */
+  /* background-size: 100% 100%; */
+  /* linear-gradient(to top, #0000ff, rgb(255 255 255/ 0%)); */
+  /* padding-top: 2rem; */
+}
+
+.control-box {
+  width: 100%;
+  margin-right: 10px;
+}
+.button-control-box {
+  height: 80%;
+  border-radius: 0.5rem;
+  background: linear-gradient(to top, #000000, #444444);
+  display: flex;
+  justify-content: space-around;
+  padding: 3%;
+}
+
+.control-button {
+  font-weight: bold;
+  width: 20%;
+  border: none;
+  margin: auto;
+  height: 100%;
+  border-radius: 0.5rem;
+  background: linear-gradient(to top, #9a9a9a, #ffffff);
+}
+.control-button:hover {
+  border: none;
+  background: linear-gradient(to top, #555555, #bebebe);
+}

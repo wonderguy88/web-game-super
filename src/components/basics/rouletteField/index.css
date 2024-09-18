@@ -1,0 +1,117 @@
+.contain {
+  border-radius: 0.5rem;
+  color: white;
+  background: linear-gradient(to top, #000000, #444444);
+  height: 100%;
+  min-height: 65px;
+}
+.contain-latest {
+  border-radius: 0.5rem;
+  background: linear-gradient(to top, #000000, #444444);
+  color: white;
+
+  height: 100%;
+  min-height: 65px;
+}
+.contain-hot-cold {
+  border-radius: 0.5rem;
+  color: white;
+  padding: 3px;
+  padding-bottom: 10px;
+  background: linear-gradient(to top, #000000, #444444);
+
+  height: 100%;
+  min-height: 65px;
+}
+
+.main-field {
+  /* background-color: #252525; */
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.contain-hot-cold .main-field {
+  padding: 0px;
+}
+
+.info {
+  font-weight: bold;
+  /* height: calc(0.08 * (100vh - 20px)); */
+}
+.value {
+  /* background: linear-gradient(#040404, #1e1e1e); */
+  display: flex;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+.unit {
+  width: 25%;
+  text-align: center;
+  color: grey;
+  align-content: center;
+}
+.contain .bet-title {
+  /* position: relative; */
+  top: -10px;
+}
+.contain-latest .bet-title {
+  /* position: relative; */
+  top: -15px;
+}
+.number {
+  background-image: url();
+}
+.flex {
+  display: flex;
+  padding: 10px;
+}
+.number-box {
+  background: linear-gradient(to bottom, #d6d6d6 40%, #8f8f8f);
+  border-radius: 2px;
+  margin-right: 7px;
+  width: 100%;
+  text-align: center;
+}
+.content-center {
+  justify-content: center;
+}
+
+.numbers-info .latest-numbers {
+  margin-right: 1vw;
+}
+
+.info-content {
+  /* position: relative; */
+  top: -15px;
+  flex-grow: 5;
+  display: flex;
+  /* margin-bottom: 1%; */
+}
+
+.latest-numbers-content {
+  display: flex;
+  width: 100%;
+  /* margin: 0 4% 0 6%; */
+}
+.latest-numbers-content div {
+  width: 10%;
+  margin: 2%;
+  border-radius: 0.2rem;
+  text-align: center;
+  align-content: center;
+  background: linear-gradient(to top, #9a9a9a, #ffffff);
+}
+.number-frequency {
+  margin: 2%;
+  width: 100%;
+  display: flex;
+  border-radius: 0.5rem;
+  background: linear-gradient(to bottom, #000000, #1f1f1f);
+}
+.number-frequency div {
+  text-align: center;
+  align-content: center;
+  border-radius: 0.3rem;
+}
