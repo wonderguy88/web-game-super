@@ -18,11 +18,13 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts --openssl-legacy-provider start",
+    "ui": "react-scripts --openssl-legacy-provider start",
+    "server": "node ./server/index.js",
     "build": "react-scripts --openssl-legacy-provider build",
     "wp": "node --openssl-legacy-provider ./scripts/build-non-split.js",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start": "concurrently --kill-others \"npm run server\" \"npm run ui\""
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -40,6 +42,7 @@
     ]
   },
   "devDependencies": {
+    "concurrently": "^9.0.1",
     "gh-pages": "^2.2.0"
   }
 }
