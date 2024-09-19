@@ -4,34 +4,35 @@
 
 ### Overview
 
-This Roulette Game is a part of "Project #3: Casino-S.H.I.C" for University of Arizona Coding Bootcamp.
-This was my personal assignement, and this is a stand alone version.
-
-
-![Screenshot](public/resources/screen.jpg)
+This Roulette Game is a part of Casino Game.
+This was my personal, and this should be a stand alone version.
 
 Complete project can be found at:
 
-[Github repository](https://github.com/cchitla/casino-shic)
+[Github repository](https://github.com/wonderguy88/web-game-super)
 
-[Heroku deployed demo](https://casino-shic.herokuapp.com/)
+[Vercel deployed demo](https://react-roulette-inky.vercel.app/)
 
 ### Technologies used
 
-* JavaScript / HTML5 / CSS3
-* NodeJS
-* ReactJS
-* Bootstrap / React Bootstrap
+- JavaScript / HTML5 / CSS3
+- NodeJS
+- ReactJS
+- Bootstrap / React Bootstrap
 
----
+### How to run
 
-[Project Demo](https://malinkamell.github.io/Roulette-Game-React/)
+That's simple!
 
----
+First, Please install node 18+ version on your computer.
+
+And in the root directory, run this script
+
+```
+npm install
+npm start
+```
 
 **Optimized for 1920x1080 screen resolution and Google Chrome Version 79**
 
-_Made for University of Arizona Coding Bootcamp, Week 22-24, January-February 2020_
-
-
-
+_Made for University of Arizona Coding Bootcamp, Week 22-24, January-February 2024_
