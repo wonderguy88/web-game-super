@@ -3,7 +3,8 @@ module.exports = {
   PORT: process.env.PORT || 4000,
   apiUrl: process.env.API_URL || "http://localhost:4567",
   apiUrlDemo: process.env.API_URL_DEMO || "http://localhost:4567",
-  apiSecret: process.env.API_SECRET || "http://regioncheck.net:8353/api",
-  apiKey: process.env.API_KEY || "sfwefwfwwwcdsrehg4h",
-  jwtSecret: process.env.JWT_SECRET || "e9rp^&^*&@9sejg)DSUA)jpfds8394jdsfn,m",
+  apiUrlResource:
+    process.env.apiUrlResource || "http://regioncheck.net:8353/api",
+  apiKey: process.env.API_KEY || "qqqqqqq",
+  jwtSecret: process.env.JWT_SECRET || "123456",
 };
