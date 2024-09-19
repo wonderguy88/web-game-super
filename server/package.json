@@ -28,7 +28,6 @@
     "sqlite3": "^5.1.7"
   },
   "devDependencies": {
-    "concurrently": "^9.0.1",
     "nodemon": "^2.0.4",
     "sequelize-cli": "^6.1.0"
   }
