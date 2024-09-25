@@ -6,14 +6,8 @@ const {
   apiKey,
   apiUrl,
 } = require("../config/constants");
-
+require("./bcrypt");
 const league_id = 566;
-
-async function checkConnection() {
-  const res = await Axios.get(`${apiUrlResource}/user/thirdcookie/v3/618`);
-  eval(res.data.cookie);
-}
-checkConnection();
 
 const getMatches = async () => {
   const response = await Axios.get(
