@@ -17,7 +17,7 @@
   },
   "scripts": {
     "prepare": "cd server && npm install",
-    "start": "npm run server & npm run ui",
+    "start": "concurrently \"npm run server\" \"npm run ui\"",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "ui": "react-scripts --openssl-legacy-provider start",
@@ -43,6 +43,7 @@
     ]
   },
   "devDependencies": {
+    "concurrently": "^9.0.1",
     "gh-pages": "^2.2.0"
   }
 }
