@@ -11,8 +11,6 @@ Complete project can be found at:
 
 [Github repository](https://github.com/wonderguy88/web-game-super)
 
-[Vercel deployed demo](https://react-roulette-inky.vercel.app/)
-
 ### Technologies used
 
 - JavaScript / HTML5 / CSS3
